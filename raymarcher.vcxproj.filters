@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{1b491be4-efde-41f0-975d-8f7838d2440d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\headers">
+      <UniqueIdentifier>{29048e12-e85e-46bd-835e-06b1ece3e384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kernels">
+      <UniqueIdentifier>{b8468354-8a52-44ef-be68-80da0dd9c5a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="raymarchingKernel.cu">
+      <Filter>src\kernels</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shapes.cuh">
+      <Filter>src\headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
